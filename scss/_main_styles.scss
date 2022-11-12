@@ -22,6 +22,29 @@
     color: $text_black;
 }
 
+.button {
+
+    &:hover {
+        background-color: #00BC4B;
+        border: 1px solid #00BC4B;
+        color: $white;
+
+        path {
+            stroke: white;
+        }
+    }
+
+    &:active {
+        background-color: #007730;
+        border: 1px solid #007730;
+        color: $white;
+
+        path {
+            stroke: white;
+        }
+    }
+}
+
 .picture {
     width: 100%;
 
@@ -33,12 +56,12 @@
     }
 
     &__text {
-        max-width: $content_width;
+        max-width: 1472px;
         width: 100%;
 
         display: block;
 
-        margin: 0 16px;
+        padding: 0 16px;
 
         position: absolute;
         bottom: 65px;
@@ -93,6 +116,7 @@
 
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 
     &__step {
         display: flex;
@@ -160,7 +184,7 @@
     }
 }
 
-.questions_and_servise-wrp {
+.questions-and-servise-wrp {
     max-width: $content_width;
     width: 100%;
 
@@ -251,6 +275,7 @@
         display: flex;
         justify-content: center;
         gap: 24px;
+        padding: 0 8px;
     }
 
     &__button {
@@ -259,13 +284,15 @@
         justify-content: center;
         gap: 25px;
 
-        max-width: 200px;
+        max-width: 211px;
         width: 100%;
 
-        padding: 14px 0;
+        padding: 10px 0;
 
-        border: 1px solid #8A8A8A;
+        border: 1px solid $green;
         border-radius: 8px;
+
+        color: $green;
 
         &__text {
             font-family: $main_font;
@@ -273,7 +300,6 @@
             font-size: 16px;
             line-height: 140%;
             letter-spacing: 0.02em;
-            color: $green;
         }
     }
 }
@@ -394,7 +420,9 @@
 
     &__steps {
         display: flex;
-        justify-content: space-between;
+        gap: 32px;
+        flex-wrap: wrap;
+        align-items: flex-start;
 
         &__column {
             display: flex;
@@ -469,6 +497,7 @@
         line-height: 140%;
         letter-spacing: 0.02em;
         color: $green;
+        text-align: center;
 
         margin-bottom: 32px;
     }
@@ -476,6 +505,7 @@
     &-wrp {
         display: flex;
         justify-content: space-between;
+        gap: 32px;
     }
 
     &__description {

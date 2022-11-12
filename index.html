@@ -61,7 +61,7 @@
                         <p class="main-text garanty__text">Срок гарантийного обслуживания оборудования ТМ GreenVision зависит от модели, и указан в карточке товара (раздел "Характеристики"). Подтверждением права на бесплатное гарантийное обслуживание служит заполненный гарантийный талон с печатью продавца. В гарантийном талоне обязательно указывается: модель, серийный номер товара, гарантийный срок и дата продажи. Для получения бесплатного гарантийного обслуживания, пожалуйста, сохраняйте гарантийный талон на протяжении всего срока эксплуатации товара.</p>
                     </div>
                 </div>
-                <div class="questions_and_servise-wrp">
+                <div class="questions-and-servise-wrp">
                     <div class="servise">
                         <h3 class="servise__header">Чтобы сдать оборудование в сервис, необходимо:</h3>
                         <div class="servise__step">
@@ -109,18 +109,18 @@
                         <img class="questions__img" src="images/Questions.jpg" alt="Возникли вопросы?">
                         <p class="questions__subheader">В случае возникновения технических вопросов:</p>
                         <div class="questions__buttons-wrp">
-                            <a class="questions__button" href="#">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <button class="questions__button button" onclick="location.href='tel:0800309988'" type="button">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                                     <path d="M18.1183 14.702L14.0001 15.5C11.2184 14.1038 9.50009 12.5 8.50009 10L9.27004 5.8699L7.81461 2L4.06369 2C2.93614 2 2.04823 2.93178 2.21663 4.04668C2.63704 6.83 3.87662 11.8765 7.50009 15.5C11.3053 19.3052 16.7858 20.9564 19.8021 21.6127C20.9669 21.8662 22.0001 20.9575 22.0001 19.7655L22.0001 16.1812L18.1183 14.702Z" stroke="#009B3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <p class="questions__button__text">0800309988</p>
-                            </a>
-                            <a class="questions__button" href="#">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            </button>
+                            <button class="questions__button" onclick="location.href='https://greenvision.ua/ua/about-company/contact'" type="button">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                                     <path d="M9 19L3.78974 20.7368C3.40122 20.8663 3 20.5771 3 20.1675L3 5.43246C3 5.1742 3.16526 4.94491 3.41026 4.86325L9 3M9 19L15 21M9 19L9 3M15 21L20.5897 19.1368C20.8347 19.0551 21 18.8258 21 18.5675L21 3.83246C21 3.42292 20.5988 3.13374 20.2103 3.26325L15 5M15 21L15 5M15 5L9 3" stroke="#009B3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <p class="questions__button__text">Контакты</p>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -169,7 +169,6 @@
                         </div>
                     </div>
                     <div class="return__steps">
-                        <div class="return__steps__column">
                             <div class="return__steps__step">
                                 <div class="return__steps__step__svg-wrp">
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -184,10 +183,8 @@
                                         <path d="M33 16.6208V18.0008C32.9982 21.2354 31.9508 24.3828 30.014 26.9735C28.0773 29.5642 25.3549 31.4595 22.253 32.3766C19.1511 33.2938 15.8359 33.1836 12.8017 32.0626C9.76752 30.9417 7.17698 28.8699 5.41644 26.1564C3.6559 23.4428 2.81969 20.2329 3.03252 17.0052C3.24534 13.7776 4.49581 10.7053 6.59742 8.24638C8.69903 5.7875 11.5392 4.07385 14.6943 3.36099C17.8494 2.64814 21.1504 2.97428 24.105 4.29077M33 6.00077L18 21.0158L13.5 16.5158" stroke="#009B3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
-                                <p class="return__steps__step__text main-text">Отсутствую явные механические повреждения и потёртости.</p>
+                                <p class="return__steps__step__text main-text">Отсутствуют явные механические повреждения и потёртости.</p>
                             </div>
-                        </div>
-                        <div class="return__steps__column">
                             <div class="return__steps__step">
                                 <div class="return__steps__step__svg-wrp">
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -204,8 +201,6 @@
                                 </div>
                                 <p class="return__steps__step__text main-text">Не повреждены защитные элементы (пломбы и ярлыки).</p>
                             </div>
-                        </div>
-                        <div class="return__steps__column">
                             <div class="return__steps__step">
                                 <div class="return__steps__step__svg-wrp">
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -222,8 +217,6 @@
                                 </div>
                                 <p class="return__steps__step__text main-text">Товар не имеет следов эксплуатации.</p>
                             </div>
-                        </div>
-                        <div class="return__steps__column">
                             <div class="return__steps__step">
                                 <div class="return__steps__step__svg-wrp">
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -232,7 +225,6 @@
                                 </div>
                                 <p class="return__steps__step__text main-text">Предоставлен документ подтверждающий покупку в нашем магазине - Товарный чек.</p>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <div class="send">
@@ -250,13 +242,13 @@
                             <p class="main-text">Адрес: Моторний провулок, 8б, Одеса, Одеська область, 68085</p>
                             <p class="main-text location__description__number">Телефон: +38067 654 07 90</p>
                             <p class="main-text location__description__text">Уважаемые партнёры и клиенты компании, убедительная просьба при направлении оборудования на гарантийное/постгарантийное обслуживание, очень просим Вас прикреплять к отправке заполненный сопроводительный лист, это поможет нам быстрее устранить неполадку, а так же уменьшить время Вашего ожидания, благодарим Вас за сотрудничество!</p>
-                            <a class="location__description__button" href="#">
+                            <button class="location__description__button" onclick="location.href='#'" type="button">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M6 20L18 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M12 4V16M12 16L15.5 12.5M12 16L8.5 12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <p class="location__description__button__text">Скачать файл</p>
-                            </a>
+                            </button>
                         </div>
                         <div class="location__map">
                             <img src="images/Map.jpg" alt="Карта сервисных центров">
