@@ -55,11 +55,19 @@ button.button-inactive {
     }
 }
 
+.mobile-circle-svg {
+    display: none;
+}
+
 .picture {
     width: 100%;
+    height: 560px;
+    object-fit: cover;
 
     &_wrp {
+        max-width: 1920px;
         width: 100%;
+        margin: 0 auto;
         position: relative;
 
         margin-bottom: 65px;
@@ -540,7 +548,7 @@ button.button-inactive {
             max-width: 225px;
             width: 100%;
 
-            padding: 8px 31px;
+            padding: 8px 0px;
 
             border-radius: 8px;
             border: 1px solid $green;
@@ -555,6 +563,219 @@ button.button-inactive {
                 letter-spacing: 0.02em;
 
                 color: $white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .picture {
+        height: 254px;
+        object-position: 70%;
+
+        &__text {
+            bottom: 32px;
+            font-size: 24px;
+        }
+
+        &_wrp {
+            margin-bottom: 20px;
+        }
+    }
+
+    .quality {
+        &__header {
+            font-size: 18px;
+            text-transform: none;
+        }
+
+        &__subheader {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        margin-bottom: 8px;
+    }
+
+    .control {
+        flex-direction: column;
+        gap: 8px;
+
+        &__step {
+            max-width: 100%;
+        }
+    }
+
+    .garanty {
+        padding: 16px 8px;
+        margin-bottom: 8px;
+
+        &__header {
+            margin-bottom: 16px;
+        }
+
+        &__text-block {
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    .questions-and-servise-wrp {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .desctop-circle-svg {
+        display: none;
+    }
+
+    .mobile-circle-svg {
+        display: block;
+    }
+
+    .servise {
+        padding: 16px 8px;
+        gap: 16px;
+
+        &__header {
+            text-align: center;
+        }
+
+        &__svg-wrp {
+            height: 24px;
+            width: 24px;
+            margin-right: 16px;
+            align-self: flex-start;
+        }
+    }
+
+    .questions {
+        padding-bottom: 16px;
+
+        &__img {
+            margin-bottom: 16px;
+        }
+
+        &__subheader {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0 8px;
+        }
+
+        &__buttons-wrp {
+            gap: 8px;
+        }
+
+        &__button {
+            gap: 10px;
+            padding: 8px 0;
+        }
+    }
+
+    .maintenance {
+        padding: 16px 8px;
+        margin-bottom: 8px;
+
+        &__header {
+            margin-bottom: 16px;
+        }
+
+        &__steps {
+            flex-direction: column;
+            padding: 0;
+            gap: 16px;
+
+            &__left, &__right {
+                gap: 16px;
+            }
+        }
+
+        &__step {
+            &__number {
+                font-size: 14px;
+                height: 24px;
+                width: 24px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .return {
+        padding: 16px 8px;
+        margin-bottom: 8px;
+
+        &__description {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            margin-bottom: 16px;
+
+            &__header {
+                text-align: center;
+            }
+        }
+
+        &__description-svg {
+            height: 48px;
+            width: 48px;
+        }
+
+        &__steps {
+            flex-direction: column;
+            gap: 16px;
+
+            &__step {
+                &__svg-wrp {
+                    height: 24px;
+                    width: 24px;
+
+                    align-self: flex-start;
+                }
+
+                &__text {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .send {
+        padding: 16px 8px;
+        margin-bottom: 8px;
+
+        flex-direction: column;
+        gap: 16px;
+
+        &__svg {
+            height: 49px;
+            width: 49px;
+        }
+    }
+
+    .location {
+        padding: 16px 8px;
+        margin-bottom: 136px;
+
+        flex-direction: column;
+
+        &__header {
+            margin-bottom: 16px;
+        }
+
+        &-wrp {
+            flex-direction: column-reverse;
+            gap: 16px;
+        }
+
+        &__description {
+            &__text {
+                margin-bottom: 16px;
+            }
+
+            &__button {
+                margin: 0 auto;
             }
         }
     }
