@@ -523,8 +523,9 @@ button.button-inactive {
 
     &-wrp {
         display: flex;
-        justify-content: space-between;
-        gap: 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
     }
 
     &__description {
@@ -534,9 +535,21 @@ button.button-inactive {
         &__number {
             margin-bottom: 16px;
         }
+    }
 
-        &__text {
-            margin-bottom: 64px;
+    &__download {
+        display: flex;
+        gap: 23px;
+
+        &__header {
+            font-family: $main_font;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: 0.02em;
+            color: #1F1F1F;
+
+            margin-bottom: 27px;
         }
 
         &__button {
@@ -765,7 +778,7 @@ button.button-inactive {
         }
 
         &-wrp {
-            flex-direction: column-reverse;
+            flex-direction: column;
             gap: 16px;
         }
 
@@ -776,6 +789,20 @@ button.button-inactive {
 
             &__button {
                 margin: 0 auto;
+            }
+        }
+
+        &__download {
+            &-svg {
+                height: 64px;
+                width: 64px;
+
+                align-self: flex-end;
+            }
+
+            &__header {
+                font-size: 16px;
+                margin-bottom: 16px;
             }
         }
     }

@@ -533,8 +533,9 @@ button.button-inactive path {
 }
 .location-wrp {
   display: flex;
-  justify-content: space-between;
-  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
 }
 .location__description {
   max-width: 574px;
@@ -543,10 +544,20 @@ button.button-inactive path {
 .location__description__number {
   margin-bottom: 16px;
 }
-.location__description__text {
-  margin-bottom: 64px;
+.location__download {
+  display: flex;
+  gap: 23px;
 }
-.location__description__button {
+.location__download__header {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+  margin-bottom: 27px;
+}
+.location__download__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -558,7 +569,7 @@ button.button-inactive path {
   border: 1px solid #009B3E;
   background-color: #009B3E;
 }
-.location__description__button__text {
+.location__download__button__text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -720,7 +731,7 @@ button.button-inactive path {
     margin-bottom: 16px;
   }
   .location-wrp {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 16px;
   }
   .location__description__text {
@@ -728,5 +739,14 @@ button.button-inactive path {
   }
   .location__description__button {
     margin: 0 auto;
+  }
+  .location__download-svg {
+    height: 64px;
+    width: 64px;
+    align-self: flex-end;
+  }
+  .location__download__header {
+    font-size: 16px;
+    margin-bottom: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
